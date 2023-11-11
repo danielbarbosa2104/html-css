@@ -74,7 +74,7 @@ section.image {
 
 section.image > p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.233);
+    background-color: rgba(0, 0, 0, 0.479);
     text-shadow: 1px 1px 0px black;
 }
 
