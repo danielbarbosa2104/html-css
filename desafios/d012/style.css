@@ -3,6 +3,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root {
-    --fonte-padrao: 'Sriracha';
+    --fonte-poesia: 'Sriracha';
     --fonte-destaque: 'Passion One';
+    --fonte-padrao: 'sa'
+}
+
+* {
+    margin: 0px;
+}
+
+header {
+    height: 195px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header  a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 70px 30px;
+    font-family: var(--fonte-poesia);
+    text-align: justify;
+    font-size: 1.4em;
+}
+
+#flower {
+    background-image: url(imagens/background001.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#flower > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.405);
+    width: 280px;
+    padding: 5px;
 }
