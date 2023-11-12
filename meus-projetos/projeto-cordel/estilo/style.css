@@ -32,6 +32,7 @@ html, body {
 header {
     background-color: var(--cor02);
     color: white;
+    text-align: center;
 }
 
 header > h1 {
@@ -62,7 +63,7 @@ header a:hover, footer a:hover {
 
 section {
     font-family: var(--fonte-poesia);
-    font-size: 3.5vw;
+    font-size: 3vw;
     line-height: 2em;
     padding-top: 7vh;
     padding-bottom: 7vh;
@@ -78,20 +79,27 @@ section.normal > p {
 }
 
 section.image {
-    background-color: rgb(159, 157, 157);
+    background-color: rgb(54, 54, 54);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.461);
 }
 
 section.image > p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.423);
     color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.263);
 }
 
 section#flowers {
     background-image: url(../imagens/background-flower.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: left top;
     background-attachment: fixed;
+}
+
+section#flowers > p {
+    background-color: #fac85286;
 }
 
 section#letters {
@@ -99,6 +107,10 @@ section#letters {
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
+}
+
+section#letters > p {
+    background-color: rgba(255, 235, 205, 0.393);
 }
 
 footer {
