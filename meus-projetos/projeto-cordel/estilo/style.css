@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: 'Dubiel';
+    src: url(../fonte/DUBIEL.TTF) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    /* Fontes */
+    --fonte-padrao: 'Lato';
+    --fonte-destaque: 'Dubiel';
+    --fonte-poesia: 'Sriracha'; 
+
+    /* Cores */
+    --cor01: #FFFAEE;
+    --cor02: #805500;
+    --cor03: #FFB70C;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: var(--cor02);
+    color: white;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: #fbe0a2;
+    font-variant: small-caps;
+    font-size: 10vw;
+    padding-left: 7px;
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+header a, footer a {
+    color: var(--cor03);
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+   color:#fcd77f;
+   text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte-poesia);
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: var(--cor01);
+}
+
+section.normal > p {
+    padding-bottom: 30px;
+}
+
+section.image {
+    background-color: rgb(159, 157, 157);
+}
+
+section.image > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.423);
+    color: white;
+}
+
+section#flowers {
+    background-image: url(../imagens/background-flower.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section#letters {
+    background-image: url(../imagens/background-letter.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+footer {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor02);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
