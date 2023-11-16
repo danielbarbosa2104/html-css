@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.242);
+        }
+
+        a#vermelho {
+            padding: 10px 12px;
+            background-color: red;
+        }
+
+        a#verde {
+            padding: 10px 25px;
+            background-color: green;
+        }
+
+        a#amarelo {
+            padding: 10px 17px;
+            background-color: rgb(230, 230, 2);
+        }
+
+        a#azul {
+            padding: 10px 30.8px;
+            background-color: blue;
+        }
+
+        ul {
+            padding: 0px 0px 0px 10px;
+        }
+
+        li {
+            margin: 30px 0px;
+            list-style: none;
+        }
+
+        iframe {
+            height: 400px;
+            width: 90%;
+            border: 2px solid black;
+            box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.286);
+        }
+    </style>
 </head>
 <body>
+    <h1>Brincadeira das Cores</h1>
     
+    <h2>Escolha uma cor:</h2>
+    <ul>
+        <li><a href="cores/vermelho.html" id="vermelho" target="cor">Vermelho</a></li>
+
+        <li><a href="cores/verde.html" id="verde" target="cor">Verde</a></li>
+
+        <li><a href="cores/azul.html" id="azul" target="cor">Azul</a></li>
+
+        <li><a href="cores/amarelo.html" id="amarelo" target="cor">Amarelo</a></li>
+    </ul>
+
+    <iframe src="" name="cor">
+    </iframe>
 </body>
 </html>
