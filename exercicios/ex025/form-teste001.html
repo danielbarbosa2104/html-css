@@ -20,18 +20,22 @@
 
         form {
             background-color: white;
-            width: 300px;
+            width: 350px;
             padding: 10px;
             margin: auto;
             border-radius: 10px;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
-        } 
+        }
+
+        #cursos {
+            columns: 2;
+        }
     </style>
 </head>
 <body>
     <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
-            <legend>Faça sua Conta</legend>
+            <legend>Faça seu Cadastro</legend>
             <p>
                 <label for="inome">Nome:</label>
                 <input type="text" name="nome" id="inome" required autocomplete="name">
@@ -50,19 +54,45 @@
             </p>
             <p>
                 <label for="itele">Telefone:</label>
-                <input type="tel" name="tele" id="itele" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+                <input type="tel" name="tele" id="itele" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" placeholder="(xx) xxxx-xxxx" required>
             </p>
-
             <p>
                 <label for="idata">Data:</label>
                 <input type="date">
             </p>
-            
             <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
+                <input type="radio" name="sexo" id="isxmasc"><label for="isxmasc">Masculino</label>
+
+                <input type="radio" name="sexo" id="isxfemi"><label for="isxfemi">Feminino</label>
             </p>
         </fieldset>
+        <fieldset>
+            <legend>
+                Cursos
+            </legend>
+
+            <p id="cursos">
+                <input type="checkbox" name="adm" id="iadm"> <label for="iadm">Administração</label> <br>
+
+                <input type="checkbox" name="dg" id="idg"><label for="idg">Design Gráfico</label> <br>
+
+                <input type="checkbox" name="ds" id="ids"> <label for="ids">Desenvolvimento de Sistemas</label> <br>
+
+                <input type="checkbox" name="eletro" id="ieletro"><label for="ieletro"> Eletrônica</label> <br>
+
+                <input type="checkbox" name="nutri" id="inutri"> <label for="inutri">Nutrição</label> <br>
+
+                <input type="checkbox" name="auto" id="iauto"> <label for="iauto">Automação</label> <br>
+
+                <input type="checkbox" name="qui" id="iqui"> <label for="iqui">Química</label> <br>
+
+                <input type="checkbox" name="moda" id="imoda"><label for="imoda">Moda</label> <br>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
