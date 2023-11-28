@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Dubiel';
+    src: url(../fontes/DUBIEL.TTF) format('opentype'); 
+}
+:root {
+    --fonte-title: 'Dubiel','cursive';
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+
+body, html {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    height: 150px;
+}
+
+header > h1 {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    color: white;
+    font-size: 3em;
+    font-family: var(--fonte-title);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header > div#logo {
+    width: 100%;
+}
+
+header > div#logo  img {
+    width: 170px;
+}
