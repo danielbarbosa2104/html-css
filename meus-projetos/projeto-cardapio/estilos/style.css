@@ -92,6 +92,6 @@ section#bread {
 }
 
 section#donut {
-    background: url(../imagens/rosquinha.jpg) right center no-repeat fixed;
+    background: url(../imagens/rosquinha.jpg) left center no-repeat fixed;
     background-size: cover;
 }
