@@ -1,0 +1,58 @@
+/* @charset "UTF-8";
+
+div.container {
+    display: grid;
+    grid-template-columns: 50px auto 10%;
+    grid-template-rows: 70% 30%;
+    gap: 5px;
+
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    height: 35vh;
+}
+
+div.container > div {
+    background-color: #ccc;
+    border: 1px solid blue;
+    padding: 20px;
+} */
+
+/* Template Area */
+main {
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+      'header header header header'
+      'aside section section section'
+      'footer footer footer footer';
+
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+}
+
+.div {
+    background-color: #ccc;
+    border: 1px solid blue;
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+    height: 50vh;
+}
+
+section {
+    grid-area: section;
+    height: 50vh;
+}
+
+footer {
+    grid-area: footer;
+}
+
